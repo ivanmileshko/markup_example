@@ -58,31 +58,40 @@
 }
 
 .megacontainer {
-    height: 80vh;
+    min-height: 80vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), rgba(20, 98, 72, 0.85);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 .container {
-    display: flex;
     font-family: 'Julius Sans One';
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 5vw; /* Используем относительные единицы для размера шрифта */
     color: #FFFFFF;
     background: rgba(0, 0, 0, 0.35);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 60vh;
-    width: 50vh;
-    margin: 0 40px 0 40px;
+    width: 90%; /* Используем проценты для ширины контейнера */
+    max-width: 500px; /* Ограничиваем максимальную ширину контейнера */
+    margin: 0 20px; /* Изменяем отступы для мобильных устройств */
     justify-content: space-evenly;
     border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .tech_stack {
+        height: 100vh;
+    }
+    .container {
+        font-size: 8vw; /* Увеличиваем размер шрифта для мобильных устройств */
+        height: 50vh; /* Изменяем высоту контейнера */
+    }
 }
 
 .image {
