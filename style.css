@@ -70,16 +70,16 @@
     font-family: 'Julius Sans One';
     font-style: normal;
     font-weight: 400;
-    font-size: 5vw; /* Используем относительные единицы для размера шрифта */
+    font-size: 5vw; 
     color: #FFFFFF;
     background: rgba(0, 0, 0, 0.35);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 60vh;
-    width: 90%; /* Используем проценты для ширины контейнера */
-    max-width: 500px; /* Ограничиваем максимальную ширину контейнера */
-    margin: 0 20px; /* Изменяем отступы для мобильных устройств */
+    width: 90%; 
+    max-width: 500px; 
+    margin: 0 20px; 
     justify-content: space-evenly;
     border-radius: 25px;
 }
@@ -89,8 +89,8 @@
         height: 100vh;
     }
     .container {
-        font-size: 8vw; /* Увеличиваем размер шрифта для мобильных устройств */
-        height: 50vh; /* Изменяем высоту контейнера */
+        font-size: 8vw; 
+        height: 50vh; 
     }
 }
 
